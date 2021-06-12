@@ -1,0 +1,81 @@
+<style>
+    .flip-box {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+      }
+      
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      .flip-box:hover .flip-box-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-box-front, .flip-box-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-box-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-box-back {
+        background-color: #555;
+        color: white;
+        transform: rotateY(180deg);
+      }  
+    </style>
+
+<a href="index.html"> Home </a> &nbsp;
+<a href= "aboutus.html"> Follow Us </a> <br> <br>
+<hr>
+<h1>You can follow us on...(move cursor over image for info)</h1> <br>
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="http://cdn.shopify.com/s/files/1/1328/0997/products/buy_instagram_followers_1_grande-Recovered_grande_bd015180-1080-4850-b8bb-998de2f7a45d_1200x1200.png?v=1522189382"  style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>Instagram</h2>
+        <p>https://www.instagram.com/</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="https://i1.wp.com/thepowercleanpros.com/wp-content/uploads/2014/12/facebook-flat-vector-logo-400x400.png?fit=400%2C400&ssl=1"  style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>Facebook</h2>
+        <p>https://www.facebook.com/</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png"  style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>Twitter</h2>
+        <p>https://twitter.com/?lang=en</p>
+      </div>
+    </div>
+  </div>
